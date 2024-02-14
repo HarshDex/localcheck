@@ -33,12 +33,14 @@ const CheckDetails = ({setIsAuthenticated}) => {
         (
             username === 'admin' && password === 'Pr0t3ct!on$2024'
             ? (
-                <Link to = '/ctf-sol'><button onClick={()=>setIsAuthenticated(true)}>get the ctf</button></Link>
+                <div className='nice-work'>
+                    <Link to = '/ctf-sol'><button className='backtoanswer' onClick={()=>setIsAuthenticated(true)}>get the ctf</button></Link>
+                </div>
             ) 
-            : (<>
+            : (<div className='login-failed'>
                 <p>Login Failed</p>
-                <Link to='/'>Retry</Link>
-            </>)
+                <Link className =  'restart' to='/'>Retry</Link>
+            </div>)
         )
     }</div>
   );

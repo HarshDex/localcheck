@@ -8,6 +8,7 @@ const LoginPage = () => {
   return (
     <div className='login-form'>
       <header>LoginPage</header>
+      <h3>Only letters, numbers and symbols are allowed !!</h3>
       <form>
         <div className="user-name">
           <label htmlFor="username">username</label>
